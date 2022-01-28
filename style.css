@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   height: 700vh; 
+}
+::-webkit-scrollbar {display: none;}
+
+.line-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+svg{
+  display: inline-block;
+  height: 120%;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    font-size: 3em;
+    font-family: 'Heebo', sans-serif;
+}
+
+.one{
+    background-image: url('./img/inicioCreativa2.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.one h1{
+  color: black;
+}
+.one div{
+  background-image: url('./img/logo_fino.png');
+  width: 30%;
+  height: 100%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.two{
+  width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+h1{
+  position: absolute;
+  z-index: 1;
+  color: white;
+}
+
+p{
+  position: absolute;
+  z-index: 0;
+  color: rgb(0, 118, 253);
+  opacity: .5;
+  top: 1%;
+  right: 5%;
+  white-space: nowrap;
+  font-size: 6vw;
+  font-weight: normal;
+}
+.three{
+  position: absolute;
+  top: 200vh;
+  left: 5%;
+  width: calc(50vw - 20%);
+  background-image: url('./img/pinzas-amarillas-flores-cuadrado.png');
+  background-size:100%;
+  background-repeat: no-repeat;
+  filter: drop-shadow( 15px 5px 15px  rgba(105, 105, 105,0.3));
+  -webkit-filter: drop-shadow( 15px 5px 15px  rgba(105, 105, 105,0.3));
+}
+.three h1{
+  top: 0%;
+  left: 20%;
+  font-size:150%;
+}
+.four{
+  position: absolute;
+  top: 250vh;
+  right: 5%;
+  width: calc(50vw - 20%);
+  background-image: url('./img/girafa.jpg');
+  background-size:100%;
+  background-repeat: no-repeat;
+  filter: drop-shadow( 15px 5px 15px  rgba(105, 105, 105,0.3));
+  -webkit-filter: drop-shadow( 15px 5px 15px  rgba(105, 105, 105,0.3));
+}
+footer{
+  width: 100vw;
+  height: 3rem;
+  background: rgba(190, 190, 190, 0.377);
+  position: fixed;
+  bottom: 0;
+}
+
+
+/* -----------------Banner--------------- */
+
+.container_banners{
+    position: absolute;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+.pinzas{
+ /*  top: 100vh;
+  right: 25%;
+  width: 50vw;
+  height: 100vh; */
+}
+.tangram{
+ /*  background: red; */
+  top: 350vh;
+  right: 0%;
+  width: 30vw;
+  height: 50vh;
+}
+.pendientes{
+  /*  background: blue; */
+   top: 410vh;
+   left: 0%;
+   width: 70vw;
+   height: 50vh;
+ }
+ .pendientes2{
+  /*  background: blue; */
+   top: 250vh;
+   left: 0%;
+   width: 100vw;
+   height: 50vh;
+ }
+ .pendientes3{
+  /*  background: blue; */
+   top: 600vh;
+   right: 0%;
+   width: 100vw;
+   height: 50vh;
+ }
+ .pendientes4{
+  /*  background: blue; */
+   top: 550vh;
+   right: 0%;
+   width: 100vw;
+   height: 50vh;
+ }
+
+.banner{
+    width: 100%;
+    height: 100%;
+    /* background-color: #CCC; */
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#banner_1{
+  background-image: url('./img/pinzas-amarillas-flores.png');
+}
+#banner_2{
+  background-image: url('./img/pinzas-azules.png');
+}
+/*   #banner_2{
+    background-image: url('./img/pinzas-rosa.png');
+  } */
+#banner_4{
+    background-image: url('./img/pinzas-rojo.png');
+  }
+  /*  #banner_4{
+    background-image: url('./img/pinzas-azulclaro-estampado.png');
+  } */ 
+  #banner_5{
+    background-image: url('./img/pinzas-verdes.png');
+  }
+  #banner_6{
+    background-image: url('./img/pinzas-amarillas.png');
+  }
+  #banner_8{
+    background-image: url('./img/girafa.png');
+  }
+  #banner_9{
+    background-image: url('./img/camello.png');
+  }
+  #banner_10{
+    background-image: url('./img/pendientes_vertical.png');
+  }
+  #banner_11{
+    background-image: url('./img/pendientes_vertical2.png');
+  }
+  #banner_12{
+    background-image: url('./img/pendientes_vertical3.png');
+  }
+  #banner_13{
+    background-image: url('./img/pendientes_horizontal.png');
+  }
+
+
+  /* ---------------Media Queries---------------- */
+  @media screen and (max-width: 768px) {
+    .one{
+      background-image: url('./img/iniciomovil.png');
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+  }
+    .one div{
+      width: 70%;
+    }
+
+    .container_banners{
+      position: absolute;
+      scroll-behavior: smooth;
+      overflow: visible;
+  }
+  .pinzas{
+    top: 100vh;
+    right: 25%;
+    width: 50vw;
+    height: 100vh;
+  }
+ 
+  .banner{
+    width: 100%;
+    height: 100%;
+  }
+    
+}
