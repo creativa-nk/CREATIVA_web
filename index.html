@@ -15,7 +15,6 @@
    </div>
 
     <section class="one">
-        <!-- <h1 class="scroll" data-rate='.5' data-direction="vertical">CREATIVA</h1> -->
         <div class="scroll" data-rate='.5' data-direction="vertical"></div>
     </section>
     <div class="container_banners pinzas">
@@ -48,34 +47,20 @@
         <div class="banner" id="banner_13"></div>
     </div>
 
-
-   <!--  <section class="three">
-        <h1 class="scroll" data-rate='.2' data-direction="vertical">Click to see</h1>
-    </section> -->
-   <!--  <section class="two">
-        <p >Click to see </p>
-    </section> -->
-    <!-- <section class="four"></section> -->
-   
-
-
-   
-
-
-<footer> footer</footer>
+   <footer> footer</footer>
    
    <script>
    
-var path = document.querySelector('path');
-var pathLength = path.getTotalLength();
+    var path = document.querySelector('path');
+    var pathLength = path.getTotalLength();
 
-path.style.strokeDasharray = pathLength + ' ' + pathLength;
-path.style.strokeDashoffset = pathLength;
-path.getBoundingClientRect();
+    path.style.strokeDasharray = pathLength + ' ' + pathLength;
+    path.style.strokeDashoffset = pathLength;
+    path.getBoundingClientRect();
 
-window.addEventListener("scroll", function(e) {
-    var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop - 1100) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-    /*  - 800 para delay */
+    window.addEventListener("scroll", function(e) {
+        var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop - 1100) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+        /*  - 800 para delay */
 
     var drawLength = pathLength * scrollPercentage;
 
