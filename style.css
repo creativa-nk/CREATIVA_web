@@ -107,7 +107,23 @@ footer{
   background: rgba(190, 190, 190, 0.377);
   position: fixed;
   bottom: 0;
+  color: rgb(126, 126, 126);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-family: 'Heebo', sans-serif;
+  font-weight: bolder;
 }
+footer a{
+  text-decoration: none;
+  color: rgb(126, 126, 126);
+  cursor: pointer;
+  margin-right: 2rem;
+}
+footer a:hover{
+  color: blue;
+}
+
 
 
 /* -----------------Banner--------------- */
