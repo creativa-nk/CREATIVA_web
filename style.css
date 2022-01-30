@@ -110,6 +110,7 @@ p{
 }
 .antes-footer{
   width: 100vw;
+  overflow-x: hidden;
   height: 180px; 
 }
 .antes-footer .texto{
@@ -121,8 +122,9 @@ p{
   position: relative;
   color: white;
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 16px;
   padding: 0px 20px;
+  letter-spacing: 2px;
 }
 .antes-footer img{
   width: calc(100vh/7);
@@ -131,6 +133,7 @@ p{
 
 footer{
   width: 100vw;
+  overflow-x: hidden;
   height: 3rem;
   position: fixed;
   bottom: 0;
