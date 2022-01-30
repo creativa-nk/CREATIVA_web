@@ -6,6 +6,7 @@
 }
 body{
    height: 700vh; 
+   font-family: 'Heebo', sans-serif;
 }
 ::-webkit-scrollbar {display: none;}
 
@@ -101,27 +102,62 @@ p{
   filter: drop-shadow( 15px 5px 15px  rgba(105, 105, 105,0.3));
   -webkit-filter: drop-shadow( 15px 5px 15px  rgba(105, 105, 105,0.3));
 }
+
+/* ---------------Footer----------- */
+
+.antes-footer, footer{
+  background: rgb(155, 155, 155);
+}
+.antes-footer{
+  width: 100vw;
+  height: 180px; 
+}
+.antes-footer .texto{
+  width: 90%;
+  margin: 10px auto;
+}
+.antes-footer p{
+  width: 100%;
+  position: relative;
+  color: white;
+  font-weight: bolder;
+  font-size: 18px;
+  padding: 0px 20px;
+}
+.antes-footer img{
+  width: calc(100vh/7);
+  margin: 0 10px;
+}
+
 footer{
   width: 100vw;
   height: 3rem;
-  background: rgba(190, 190, 190, 0.377);
   position: fixed;
   bottom: 0;
-  color: rgb(126, 126, 126);
+  color: rgb(114, 114, 114);
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   font-family: 'Heebo', sans-serif;
   font-weight: bolder;
 }
+footer .container_contact{
+  display: flex;
+}
+.container_contact div{
+  margin-left: 20px;
+  color: white;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
 footer a{
   text-decoration: none;
-  color: rgb(126, 126, 126);
+  color: rgb(73, 73, 73);
   cursor: pointer;
-  margin-right: 2rem;
+  margin-right: 10px;
 }
 footer a:hover{
-  color: blue;
+  color: rgb(255, 0, 0);
 }
 
 
