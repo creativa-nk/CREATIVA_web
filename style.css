@@ -22,7 +22,7 @@ body{
 
 svg{
   display: inline-block;
-  height: 120%;
+  height: 100%;
 }
 section{
     display: flex;
@@ -40,19 +40,56 @@ section{
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    opacity: 0;
+    animation:backInicio 1s .5s ease-in forwards ;
+    -webkit-animation:backInicio 1s .5s ease-in forwards ;
 }
+/* ----Anim inicio------- */
+@keyframes backInicio {
+  to{
+    opacity: 1;
+  }
+}
+
+
+/* --------------------- */
 
 .one h1{
   color: black;
 }
-.one div{
+/* .one div{
   background-image: url('./img/logo_fino.png');
   width: 30%;
   height: 100%;
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+} */
+.box{
+  /* background: red; */
+  width: 30px;
+  height: 50px;
+  display: inline-block;
+  overflow: hidden;
 }
+.box img{
+  height: 65%;
+  width: auto;
+  margin-left:-100px;
+  animation: textoAparece 1s 1.5s ease-in forwards;
+  -webkit-animation: textoAparece 1s 1.5s ease-in forwards;
+}
+
+/* ----anim -- texto------------ */
+@keyframes textoAparece{
+  to{
+    margin-left:0px;
+  }
+}
+
+/* --------------------- */
+
+
 .two{
   width: 100%;
     position: relative;
@@ -172,12 +209,6 @@ footer a:hover{
     scroll-behavior: smooth;
     overflow: hidden;
 }
-.pinzas{
- /*  top: 100vh;
-  right: 25%;
-  width: 50vw;
-  height: 100vh; */
-}
 .tangram{
  /*  background: red; */
   top: 350vh;
@@ -269,6 +300,9 @@ footer a:hover{
 
   /* ---------------Media Queries---------------- */
   @media screen and (max-width: 768px) {
+    svg{
+      height: 100vh;
+    }
     .one{
       background-image: url('./img/iniciomovil.png');
       background-size: 100%;
@@ -276,9 +310,9 @@ footer a:hover{
       background-repeat: no-repeat;
       height: 100vh;
   }
-    .one div{
+ /*    .one div{
       width: 70%;
-    }
+    } */
 
     .container_banners{
       position: absolute;
