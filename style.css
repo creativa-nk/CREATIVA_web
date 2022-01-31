@@ -77,8 +77,8 @@ section{
   height: 65%;
   width: auto;
   margin-left:-100px;
-  animation: textoAparece 1s 5s ease-in forwards;
-  -webkit-animation: textoAparece 1s 5s ease-in forwards;
+  animation: textoAparece 1s 4.5s ease-in forwards;
+  -webkit-animation: textoAparece 1s 4.5s ease-in forwards;
 }
 
 /* ----anim -- texto------------ */
