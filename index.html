@@ -26,6 +26,9 @@
            </div>
         
             <section class="one">
+                <div class="flecha">
+                    <img src="./img/flechas.png" alt="">
+                </div>
                 <!-- <div class="scroll" data-rate='.5' data-direction="vertical"></div> -->
                 <div class="scroll box" data-rate='.5' data-direction="vertical">
                     <img  style="--i:1" src="./img/letraC.png" alt="">
@@ -126,7 +129,7 @@
     path.getBoundingClientRect();
 
     window.addEventListener("scroll", function(e) {
-        var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop - 1100) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+        var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop - 900) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
         /*  - 800 para delay */
 
     var drawLength = pathLength * scrollPercentage;

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 *{
     margin: 0;
@@ -51,21 +52,50 @@ section{
     opacity: 1;
   }
 }
-
-
 /* --------------------- */
 
+.one .flecha{
+  /*background: violet;
+  */
+  opacity: .6;
+  width: 40px;
+  height: 50px;
+  position: absolute;
+  left: calc(50vw-20px);
+  top: 80%;
+  animation: bounce 2.5s 2s linear infinite ;
+  -webkit-animation: bounce 2.5s 2s linear infinite ;
+}
+.flecha img{
+  width: 100%;
+}
+
+/* ---------anime flecha---- */
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+    transform: translate3d(0, -15px, 0) scaleY(1.05);
+  }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+    transform: translate3d(0, -4px, 0) scaleY(1.02);
+  }
+}
+/* ---------------------------- */
 .one h1{
   color: black;
 }
-/* .one div{
-  background-image: url('./img/logo_fino.png');
-  width: 30%;
-  height: 100%;
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
 .box{
   /* background: red; */
   width: 30px;
@@ -93,25 +123,22 @@ section{
 
 .two{
   width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-h1{
-  position: absolute;
-  z-index: 1;
-  color: white;
+  position: relative;
+  overflow: hidden;
+ /*  background: chartreuse; */
 }
 
 p{
   position: absolute;
   z-index: 0;
-  color: rgb(0, 118, 253);
+  color: rgb(71, 71, 71);
   opacity: .5;
-  top: 1%;
+  top: 7%;
   right: 5%;
   white-space: nowrap;
-  font-size: 6vw;
+  font-size: 8vw;
   font-weight: normal;
+  font-family: 'Monoton', cursive;
 }
 .three{
   position: absolute;
@@ -163,6 +190,8 @@ p{
   font-size: 16px;
   padding: 0px 20px;
   letter-spacing: 2px;
+  font-family: 'Heebo', sans-serif;
+  font-weight: bolder;
 }
 .antes-footer img{
   width: calc(100vh/7);
@@ -180,8 +209,9 @@ footer{
   justify-content: space-between;
   align-items: center;
   font-family: 'Heebo', sans-serif;
-  font-weight: bolder;
+  font-weight: 300;
 }
+
 footer .container_contact{
   display: flex;
 }
