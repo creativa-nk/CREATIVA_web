@@ -5,6 +5,7 @@
     padding: 0;
 }
 body{
+  background: white;
    height: 700vh; 
    font-family: 'Heebo', sans-serif;
 }
@@ -41,8 +42,8 @@ section{
     background-repeat: no-repeat;
     height: 100vh;
     opacity: 0;
-    animation:backInicio 1s .5s ease-in forwards ;
-    -webkit-animation:backInicio 1s .5s ease-in forwards ;
+    animation:backInicio .6s 4s ease-in forwards ;
+    -webkit-animation:backInicio .6s 4s ease-in forwards ;
 }
 /* ----Anim inicio------- */
 @keyframes backInicio {
@@ -76,8 +77,8 @@ section{
   height: 65%;
   width: auto;
   margin-left:-100px;
-  animation: textoAparece 1s 1.5s ease-in forwards;
-  -webkit-animation: textoAparece 1s 1.5s ease-in forwards;
+  animation: textoAparece 1s 5s ease-in forwards;
+  -webkit-animation: textoAparece 1s 5s ease-in forwards;
 }
 
 /* ----anim -- texto------------ */

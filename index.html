@@ -5,96 +5,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loading.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Creativa con animaciones</title>
 </head>
 <body>
-    <div class="line-container">
-        <svg preserveAspectRatio='xMidYMax meet' viewBox="0 0 1440 2670" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M530 0V462H673C617.155 554.164 585.845 605.836 530 698L400 490.5H530V931.5V1250H615L530 1383H615L530 1515V1863H748V2086H974V2312H748V2534H530V2670M722 0V194H928V388H1144V584H1356H1438V1170H956V1670H1438V1863C1438 1863 1333.52 1881 1332 1972C1330.48 2063 1438 2074 1438 2074C1438 2074 1290 2084 1272 2234C1272 2390 1438 2410 1438 2410V2670M0 0V750C0 750 235 760 229 974C223 1188 0 1188.5 0 1188.5C0 1188.5 234 1202 229 1418C224 1634 0 1634 0 1634C0 1634 239.485 1647 229 1863C218.515 2079 0 2074 0 2074V2670" stroke="black" stroke-width="9"/>
-            </svg>
-   </div>
+    <div class="loading">
+        <div id="spinner"></div>
+        <span id="agent"></span>
+        <div id="content">
+    </div>
+    
 
-    <section class="one">
-        <!-- <div class="scroll" data-rate='.5' data-direction="vertical"></div> -->
-        <div class="scroll box" data-rate='.5' data-direction="vertical">
-            <img src="./img/letraC.png" alt="">
-        </div>
-        <div class="scroll box" data-rate='.5' data-direction="vertical">
-            <img src="./img/letraR.png" alt="">
-        </div>
-        <div class="scroll box" data-rate='.5' data-direction="vertical">
-            <img src="./img/letraE.png" alt="">
-        </div>
-        <div class="scroll box" data-rate='.5' data-direction="vertical">
-            <img src="./img/letraA.png" alt="">
-        </div>
-        <div class="scroll box" data-rate='.5' data-direction="vertical">
-            <img src="./img/letraT.png" alt="">
-        </div>
-        <div class="scroll box" data-rate='.5' data-direction="vertical">
-            <img src="./img/letraI.png" alt="">
-        </div>
-        <div class="scroll box" data-rate='.5' data-direction="vertical">
-            <img src="./img/letraV.png" alt="">
-        </div>
-        <div class="scroll box" data-rate='.5' data-direction="vertical">
-            <img src="./img/letraA.png" alt="">
-        </div>
-    </section>
-    <div class="container_banners pinzas">
-        <div class="banner" id="banner_1"></div>
-        <div class="banner" id="banner_2"></div>
-        <div class="banner" id="banner_3"></div>
-        <div class="banner" id="banner_4"></div>
-        <div class="banner" id="banner_5"></div>
-        <div class="banner" id="banner_6"></div>
-        <div class="banner" id="banner_7"></div>
     </div>
-   <section class="two" >
-       <p class=" scroll" data-rate='.1' data-direction="vertical">Keep scrolling</p>
-   </section>
-
-   <div class="container_banners tangram">
-        <div class="banner" id="banner_8"></div>
-        <div class="banner" id="banner_9"></div>
-    </div>
-    <div class="container_banners pendientes">
-        <div class="banner" id="banner_10"></div>
-    </div>
-    <div class="container_banners pendientes2">
-        <div class="banner" id="banner_11"></div>
-    </div>
-    <div class="container_banners pendientes3">
-        <div class="banner" id="banner_12"></div>
-    </div>
-    <div class="container_banners pendientes4">
-        <div class="banner" id="banner_13"></div>
-    </div>
-    <div class="antes-footer">
-        <img src="./img/logo_fino_blanco.png" alt="">
-        <hr>
-        <div class="texto">
-            <p>Joyeria original hecha a mano.</p>
-            <p>Sigueme en : </p>
-        </div>
-    </div>
-
-   <footer>
-        <div class="container_contact">
-            <div onclick="location.href='https://www.instagram.com/creativa.nk/?hl=es'"  class = "contact">
-                <i class="fab fa-instagram"></i>    
-            </div>
-            <div onclick="location.href='https://www.facebook.com/creativa.nk/'" class = "contact">
-                <i class="fab fa-facebook"></i>
-            </div>
-            <div onclick="location.href='https://www.artesanum.com/store/creativa-nk'" class = "contact">
-                <i class="fas fa-shopping-bag"></i>
-            </div>
-        </div> 
         
-       <div> Diseñado por &nbsp; <a href="https://nadiaklokova.com/">creativa-nk</a></div>
-</footer>
+            <div class="line-container">
+                <svg preserveAspectRatio='xMidYMax meet' viewBox="0 0 1440 2670" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M530 0V462H673C617.155 554.164 585.845 605.836 530 698L400 490.5H530V931.5V1250H615L530 1383H615L530 1515V1863H748V2086H974V2312H748V2534H530V2670M722 0V194H928V388H1144V584H1356H1438V1170H956V1670H1438V1863C1438 1863 1333.52 1881 1332 1972C1330.48 2063 1438 2074 1438 2074C1438 2074 1290 2084 1272 2234C1272 2390 1438 2410 1438 2410V2670M0 0V750C0 750 235 760 229 974C223 1188 0 1188.5 0 1188.5C0 1188.5 234 1202 229 1418C224 1634 0 1634 0 1634C0 1634 239.485 1647 229 1863C218.515 2079 0 2074 0 2074V2670" stroke="black" stroke-width="9"/>
+                    </svg>
+           </div>
+        
+            <section class="one">
+                <!-- <div class="scroll" data-rate='.5' data-direction="vertical"></div> -->
+                <div class="scroll box" data-rate='.5' data-direction="vertical">
+                    <img src="./img/letraC.png" alt="">
+                </div>
+                <div class="scroll box" data-rate='.5' data-direction="vertical">
+                    <img src="./img/letraR.png" alt="">
+                </div>
+                <div class="scroll box" data-rate='.5' data-direction="vertical">
+                    <img src="./img/letraE.png" alt="">
+                </div>
+                <div class="scroll box" data-rate='.5' data-direction="vertical">
+                    <img src="./img/letraA.png" alt="">
+                </div>
+                <div class="scroll box" data-rate='.5' data-direction="vertical">
+                    <img src="./img/letraT.png" alt="">
+                </div>
+                <div class="scroll box" data-rate='.5' data-direction="vertical">
+                    <img src="./img/letraI.png" alt="">
+                </div>
+                <div class="scroll box" data-rate='.5' data-direction="vertical">
+                    <img src="./img/letraV.png" alt="">
+                </div>
+                <div class="scroll box" data-rate='.5' data-direction="vertical">
+                    <img src="./img/letraA.png" alt="">
+                </div>
+            </section>
+            <div class="container_banners pinzas">
+                <div class="banner" id="banner_1"></div>
+                <div class="banner" id="banner_2"></div>
+                <div class="banner" id="banner_3"></div>
+                <div class="banner" id="banner_4"></div>
+                <div class="banner" id="banner_5"></div>
+                <div class="banner" id="banner_6"></div>
+                <div class="banner" id="banner_7"></div>
+            </div>
+           <section class="two" >
+               <p class=" scroll" data-rate='.1' data-direction="vertical">Keep scrolling</p>
+           </section>
+        
+           <div class="container_banners tangram">
+                <div class="banner" id="banner_8"></div>
+                <div class="banner" id="banner_9"></div>
+            </div>
+            <div class="container_banners pendientes">
+                <div class="banner" id="banner_10"></div>
+            </div>
+            <div class="container_banners pendientes2">
+                <div class="banner" id="banner_11"></div>
+            </div>
+            <div class="container_banners pendientes3">
+                <div class="banner" id="banner_12"></div>
+            </div>
+            <div class="container_banners pendientes4">
+                <div class="banner" id="banner_13"></div>
+            </div>
+            <div class="antes-footer">
+                <img src="./img/logo_fino_blanco.png" alt="">
+                <hr>
+                <div class="texto">
+                    <p>Joyeria original hecha a mano.</p>
+                    <p>Sigueme en : </p>
+                </div>
+            </div>
+        
+           <footer>
+                <div class="container_contact">
+                    <div onclick="location.href='https://www.instagram.com/creativa.nk/?hl=es'"  class = "contact">
+                        <i class="fab fa-instagram"></i>    
+                    </div>
+                    <div onclick="location.href='https://www.facebook.com/creativa.nk/'" class = "contact">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <div onclick="location.href='https://www.artesanum.com/store/creativa-nk'" class = "contact">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                </div> 
+                
+               <div> Diseñado por &nbsp; <a href="https://nadiaklokova.com/">creativa-nk</a></div>
+        </footer>
+            
+        
+    
+
+
+
+
+
+
+   
    
    <script>
    
