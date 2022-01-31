@@ -98,8 +98,8 @@ section{
 }
 .box{
   /* background: red; */
-  width: 30px;
-  height: 50px;
+  width: 60px;
+  height: 90px;
   display: inline-block;
   overflow: hidden;
 }
@@ -330,7 +330,13 @@ footer a:hover{
 
 
   /* ---------------Media Queries---------------- */
+  
   @media screen and (max-width: 768px) {
+    .box{
+      /* background: red; */
+      width: 30px;
+      height: 50px;
+    }
     svg{
       height: 100vh;
     }
@@ -341,9 +347,7 @@ footer a:hover{
       background-repeat: no-repeat;
       height: 100vh;
   }
- /*    .one div{
-      width: 70%;
-    } */
+
 
     .container_banners{
       position: absolute;
